@@ -17,8 +17,10 @@
         {% endif %}
         
         </p>
-
-
+        <p><strong>👨‍🎓Gender:</strong></p>
+        <span class="{% if student.Gender == 'M' %}male {% else %}female{% endif %}">{{student.Gender}}
+        </span>
+        <p><strong>📝Course:</strong>{{student.Course}}</p>
     </div>
 </div>
 {% endblock content %}
